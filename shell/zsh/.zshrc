@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 # Uncomment for debuf with `zprof`
-# zmodload zsh/zprof
+#zmodload zsh/zprof
+#zprof
 
 # ZSH Ops
 setopt HIST_IGNORE_ALL_DUPS
@@ -53,6 +54,8 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH="$PATH:$JAVA_HOME/bin:$cargo/bin:$jetbrains:$v:$flutter/bin"
 
-
+loadnvm(){
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+}
+#zprof
